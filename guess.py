@@ -8,11 +8,12 @@ i = 0
 while True :
 	num = input ('please guess the number')
 	num = int (num)
+	i += 1
 	if num == r :
 		print('correct!')
+		print (i,' attempts have been used')
 		break
 	else:
-		i = i + 1
 		print (i,' attempts have been used')
 		if num > r :
 			print ('the number guessed is greater')
